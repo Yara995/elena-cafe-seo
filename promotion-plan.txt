@@ -25,3 +25,22 @@ Proposed Hashtags:
 Promotional Strategy:
 
 Elena's Café will use Instagram and TikTok to share attractive photos and short videos of its coffee drinks and desserts. Facebook will be used to share promotions, café updates, and new menu items. The strategy will focus on visually appealing content, relevant hashtags, and engaging posts to attract coffee lovers and encourage customers to visit the café.
+SEO Audit Results
+
+The Elena's Café website was tested using Seobility after being published on GitHub Pages.
+
+Overall On-page SEO Score: 64%
+
+Results:
+- Meta Data: 95%
+- Page Structure: 91%
+- Links: 88%
+- Page Quality: 48%
+
+SEO issues identified:
+- The page contains 162 words, below Seobility's recommended 250 words.
+- Some words from the page title are not used in the page content.
+- Only one paragraph was detected.
+- The website does not use a redirect between www and non-www URLs.
+
+The website was also checked using the W3C HTML Validator and received no errors or warnings.
