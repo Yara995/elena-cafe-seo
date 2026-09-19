@@ -1,0 +1,367 @@
+/* =========================
+   GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #fff9e9;
+    color: #4b2e1f;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.site-header {
+    text-align: center;
+    background-color: #f7cc4b;
+    padding: 15px 20px 12px;
+    border-bottom: 3px solid #4b2e1f;
+}
+
+.logo {
+    width: 190px;
+    max-width: 70%;
+    margin-bottom: 5px;
+
+}
+
+.site-header h1 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    color: #4b2e1f;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CATALOG
+   ========================= */
+
+.catalog {
+    width: 94%;
+    max-width: 1500px;
+    margin: 35px auto;
+
+}
+
+
+/* =========================
+   SECTION HEADING
+   ========================= */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.symbol {
+    font-size: 2.3rem;
+}
+
+.decorative-line {
+    height: 2px;
+    background-color: #d9a62e;
+    flex: 1;
+}
+
+.small-text {
+    font-family: cursive;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   COFFEE GRID
+   MOBILE = 1 COLUMN
+   ========================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+/* =========================
+   PRODUCT CARDS
+   ========================= */
+
+.product-card {
+    background-color: #fffdf7;
+    border: 1px solid #e7d39a;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 3px 8px rgba(75, 46, 31, 0.10);
+}
+
+.product-card figure {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 3px;
+}
+
+.product-card .price {
+    color: #a85f12;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   SWEETS
+   ========================= */
+
+.sweets-section {
+    margin-top: 55px;
+}
+
+.sweets-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.sweets-grid .product-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sweets-grid figure {
+    width: 45%;
+    margin: 0;
+}
+
+.sweets-grid .product-card img {
+    height: 180px;
+}
+
+.sweet-info {
+    width: 55%;
+}
+
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.about {
+    width: 90%;
+    max-width: 850px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.about p {
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #4b2e1f;
+    color: #fff9e9;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-brand h2 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+}
+
+.footer-brand p {
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.social {
+    margin-top: 15px;
+}
+
+.social span {
+    margin: 0 10px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   TABLET
+   2 COLUMNS
+   ========================= */
+
+@media (min-width: 600px) {
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sweets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-header h1 {
+        font-size: 2.8rem;
+    }
+}
+
+
+/* =========================
+   DESKTOP
+   3 COLUMNS
+   ========================= */
+
+@media (min-width: 900px) {
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-card img {
+        height: 200px;
+    }
+
+    .sweets-grid .product-card img {
+        height: 190px;
+    }
+
+    .site-header {
+        padding-top: 30px;
+    }
+}
+/* =========================
+   HOVER EFFECT
+   ========================= */
+
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(75, 46, 31, 0.20);
+}
+/* =========================
+   MOBILE HEADING FIX
+   ========================= */
+
+@media (max-width: 599px) {
+
+    .section-heading {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-heading h2 {
+        font-size: 1.6rem;
+        white-space: normal;
+    }
+
+    .decorative-line {
+        display: none;
+    }
+
+    .small-text {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .catalog {
+        width: 90%;
+    }
+}
+/* ===== Social Media Icons ===== */
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #6b4f3a;
+    font-size: 30px;
+    margin: 0 12px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
